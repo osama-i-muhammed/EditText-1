@@ -1,13 +1,3 @@
 <resources>
-    <string name="app_name">عقارات</string>
-    <string name="toggle_rent">ايجار</string>
-    <string name="toggle_sale">بيع</string>
-    <string name="Area_menu">مساحة</string>
-    <string name="Description">تفاصيل</string>
-    <string-array name="Area">
-        <item>١٠٠ م٢ الى ٢٠٠ م٢</item>
-        <item>٢٠٠ م٢ الى ٣٠٠ م٢</item>
-        <item>٣٠٠ م٢ الى ٤٠٠ م٢</item>
 
-    </string-array>
 </resources>

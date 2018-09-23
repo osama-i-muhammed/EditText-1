@@ -4,9 +4,82 @@
     <string name="toggle_sale">Sale</string>
     <string name="Area_menu">Area</string>
     <string name="Description">Description</string>
-    <string-array name="Area">
+    <string name="SwedishRoom">Swedish Room</string>
+    <string name="garage">Garage</string>
+
+    <string-array name="garage_spin">
+        <item>Any</item>
+        <item>No garage</item>
+        <item>1 Car</item>
+        <item>2 Car</item>
+        <item>3 Car</item>
+        <item>Above 3 Car</item>
+
+    </string-array>
+    <string-array name="Area_spin">
+        <item>Anything</item>
+        <item>below 100 m2</item>
         <item>100 m2 to 200 m2</item>
         <item>200 m2 to 300 m2</item>
         <item>400 m2 to 500 m2</item>
+        <item>Above 500 m2</item>
+    </string-array>
+
+    <string name="Room">Bedroom</string>
+    <string name="Price">Price</string>
+    <string-array name="Price_spin">
+        <item>Any number</item>
+        <item>below 50,000$</item>
+        <item>50,000$ to 100,000$</item>
+        <item>100,000$ to 150,000$</item>
+        <item>150,000$ to 200,000$</item>
+        <item>200,000$ to 250,000$</item>
+        <item>250,000$ to 300,000$</item>
+        <item>Above 300,000$</item>
+    </string-array>
+
+    <string name="HouseDirection">House Direction</string>
+    <string-array name="HouseDirection_spin">
+        <item>Any Direction</item>
+        <item>North</item>
+        <item>East</item>
+        <item>South</item>
+        <item>West</item>
+
+    </string-array>
+
+    <string-array name="num1_10">
+        <item>Any number</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string name="HouseAge">House Age</string>
+    <string-array name="HouseAge_spin">
+        <item>Any Age</item>
+        <item>below 1 year</item>
+        <item>below 2 year</item>
+        <item>below 3 year</item>
+        <item>below 4 year</item>
+        <item>below 5 year</item>
+        <item>below 10 year</item>
+    </string-array>
+
+
+    <string name="Garden">House Age</string>
+    <string-array name="Garden_spin">
+        <item>Any</item>
+        <item>Yes</item>
+        <item>No</item>
+
+
     </string-array>
 </resources>
