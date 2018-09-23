@@ -10,5 +10,7 @@ class Filter_House : AppCompatActivity() {
         setContentView(R.layout.activity_filter__house)
         //Helo World
         //WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+
+        var s=23+21+12
     }
 }
