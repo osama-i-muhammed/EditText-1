@@ -169,6 +169,66 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#999"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+
+                <EditText
+
+                    android:id="@+id/ett"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:hint="@string/Description"
+                    android:inputType="text|textMultiLine"
+                    android:maxLength="200" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#999"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+
+                <EditText
+
+                    android:id="@+id/ett"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:hint="@string/Description"
+                    android:inputType="text|textMultiLine"
+                    android:maxLength="200" />
+
+            </LinearLayout>
+
 
         </LinearLayout>
     </ScrollView>
