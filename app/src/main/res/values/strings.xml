@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Aqarat</string>
+    <string name="toggle_rent">Rent</string>
+    <string name="toggle_sale">Sale</string>
+    <string name="Area_menu">Area</string>
+    <string name="Description">Description</string>
+    <string-array name="Area">
+        <item>100 m2 to 200 m2</item>
+        <item>200 m2 to 300 m2</item>
+        <item>400 m2 to 500 m2</item>
+    </string-array>
+</resources>
