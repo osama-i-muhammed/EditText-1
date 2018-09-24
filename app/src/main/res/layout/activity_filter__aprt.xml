@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Filter_Aprt">
+    tools:context=".Filters_Activityies.Filter_Aprt">
 
     <ScrollView
         android:layout_width="0dp"
@@ -293,42 +293,42 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#999"
-                android:orientation="horizontal">
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#999"-->
+                <!--android:orientation="horizontal">-->
 
 
-            </LinearLayout>
+            <!--</LinearLayout>-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="69dp"
-                android:orientation="horizontal"
-                android:paddingBottom="20dp"
-                android:paddingTop="20dp">
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="69dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingBottom="20dp"-->
+                <!--android:paddingTop="20dp">-->
 
-                <TextView
-                    android:id="@+id/city"
-                    android:layout_width="145dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="1.5"
-                    android:text="@string/City"
-                    android:textColor="#222"
-                    android:textSize="20dp" />
+                <!--<TextView-->
+                    <!--android:id="@+id/city"-->
+                    <!--android:layout_width="145dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_gravity="left|center_vertical|center_horizontal"-->
+                    <!--android:layout_weight="1.5"-->
+                    <!--android:text="@string/City"-->
+                    <!--android:textColor="#222"-->
+                    <!--android:textSize="20dp" />-->
 
-                <EditText
-                    android:id="@+id/editarea"
-                    android:layout_width="wrap_content"
-                    android:layout_height="28dp"
-                    android:layout_weight="1.5"
-                    android:ems="10"
-                    android:hint="@string/City"
-                    android:inputType="textPersonName" />
+                <!--<EditText-->
+                    <!--android:id="@+id/editarea"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="28dp"-->
+                    <!--android:layout_weight="1.5"-->
+                    <!--android:ems="10"-->
+                    <!--android:hint="@string/City"-->
+                    <!--android:inputType="textPersonName" />-->
 
-            </LinearLayout>
+            <!--</LinearLayout>-->
 
             <LinearLayout
                 android:layout_width="match_parent"

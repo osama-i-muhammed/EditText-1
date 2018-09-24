@@ -1,185 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DesingTEST"
-    tools:layout_editor_absoluteY="81dp">
+    android:padding="5dp">
+
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="359dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ToggleButton
-            android:id="@+id/toggleButton2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/toggle_rent"
-            android:checked="false"
-            android:textOff="@string/toggle_rent"
-            android:textOn="@string/toggle_rent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="1110dp" />
-
-        <ToggleButton
-            android:id="@+id/toggleButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/toggle_sale"
-            android:checked="true"
-            android:text="ToggleButton"
-            android:textOff="@string/toggle_sale"
-            android:textOn="@string/toggle_sale"
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="1110dp" />
-    </LinearLayout>
-
-    <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#999"
-                android:orientation="horizontal">
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingBottom="20dp"
-                android:paddingTop="20dp">
-
-                <TextView
-                    android:id="@+id/dfersssassdssgrggrg"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="2"
-                    android:text="@string/Room"
-                    android:textColor="#222"
-                    android:textSize="20dp" />
-
-                <Spinner
-
-                    android:id="@+id/spissnner"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_vertical"
-                    android:layout_weight="1"
-                    android:entries="@array/num1_10" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#999"
-                android:orientation="horizontal">
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingBottom="20dp"
-                android:paddingTop="20dp">
-
-                <TextView
-                    android:id="@+id/dfersssassgrg"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="2"
-                    android:text="@string/Room"
-                    android:textColor="#222"
-                    android:textSize="20dp" />
-
-                <Spinner
-
-                    android:id="@+id/spisccsnnersnner"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_vertical"
-                    android:layout_weight="1"
-                    android:entries="@array/num1_10" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#999"
-                android:orientation="horizontal">
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingBottom="20dp"
-                android:paddingTop="20dp">
-
-
-                <EditText
-
-                    android:id="@+id/ett"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_vertical"
-                    android:layout_weight="1"
-                    android:hint="@string/Description"
-                    android:inputType="text|textMultiLine"
-                    android:maxLength="200" />
-
-            </LinearLayout>
+            android:layout_height="1dp"
+            android:background="#999"
+            android:orientation="horizontal">
 
 
         </LinearLayout>
-    </ScrollView>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+         <Button 
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" 
+            
+            android:id="@+id/house"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="House" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#999"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+
+         <Button 
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/villa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="villa" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#999"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+
+         <Button 
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/Apart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apart" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#999"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+
+         <Button 
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/Earth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Earth" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#999"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+
+         <Button 
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/Store"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Store" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#999"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+
+         <Button 
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/Storage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Storage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#999"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+
+         <Button 
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/Farm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Farm" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#999"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+  
+
+</ScrollView>
