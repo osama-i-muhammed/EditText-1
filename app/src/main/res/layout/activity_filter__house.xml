@@ -84,7 +84,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="2"
+                    android:layout_weight="1.5"
                     android:text="@string/Room"
                     android:textColor="#222"
                     android:textSize="20dp" />
@@ -122,7 +122,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="2"
+                    android:layout_weight="1.5"
                     android:text="@string/Price"
                     android:textColor="#222"
                     android:textSize="20dp" />
@@ -160,8 +160,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="2"
-                    android:text="@string/bathRoom"
+                    android:layout_weight="1.5"
+                    android:text="@string/bathroom"
                     android:textColor="#222"
                     android:textSize="20dp" />
 
@@ -172,7 +172,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical"
                     android:layout_weight="1"
-                    android:entries="sp" />
+                    android:entries="@array/num1_10" />
 
             </LinearLayout>
 
@@ -198,7 +198,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="2"
+                    android:layout_weight="1.5"
+                    android:text="@string/hall"
                     android:textColor="#222"
                     android:textSize="20dp" />
 
@@ -235,8 +236,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="2"
-                    android:text="@string/Room"
+                    android:layout_weight="1.5"
+                    android:text="@string/SwedishRoom"
                     android:textColor="#222"
                     android:textSize="20dp" />
 
@@ -277,8 +278,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="2"
-                    android:text="@string/Room"
+                    android:layout_weight="1.5"
+                    android:text="@string/garage"
                     android:textColor="#222"
                     android:textSize="20dp" />
 
@@ -289,7 +290,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical"
                     android:layout_weight="1"
-                    android:entries="@array/num1_10" />
+                    android:entries="@array/garage_spin" />
 
             </LinearLayout>
             <LinearLayout
@@ -312,8 +313,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="2"
-                    android:text="@string/Room"
+                    android:layout_weight="1.5"
+                    android:text="@string/Area_menu"
                     android:textColor="#222"
                     android:textSize="20dp" />
 
@@ -324,7 +325,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical"
                     android:layout_weight="1"
-                    android:entries="@array/num1_10" />
+                    android:entries="@array/Area_spin" />
 
             </LinearLayout>
             <LinearLayout
@@ -347,8 +348,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="2"
-                    android:text="@string/Room"
+                    android:layout_weight="1.5"
+                    android:text="@string/HouseDirection"
                     android:textColor="#222"
                     android:textSize="20dp" />
 
@@ -359,7 +360,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical"
                     android:layout_weight="1"
-                    android:entries="@array/num1_10" />
+                    android:entries="@array/HouseDirection_spin" />
 
             </LinearLayout>
 
@@ -385,8 +386,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="2"
-                    android:text="@string/Room"
+                    android:layout_weight="1.5"
+                    android:text="@string/HouseAge"
                     android:textColor="#222"
                     android:textSize="20dp" />
 
@@ -397,7 +398,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical"
                     android:layout_weight="1"
-                    android:entries="@array/num1_10" />
+                    android:entries="@array/HouseAge_spin" />
 
             </LinearLayout>
 
@@ -423,8 +424,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="2"
-                    android:text="@string/Room"
+                    android:layout_weight="1.5"
+                    android:text="@string/Garden"
                     android:textColor="#222"
                     android:textSize="20dp" />
 
@@ -435,7 +436,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical"
                     android:layout_weight="1"
-                    android:entries="@array/num1_10" />
+                    android:entries="@array/any_yes_no_spin" />
 
             </LinearLayout>
 
@@ -446,34 +447,6 @@
                 android:background="#999"
                 android:orientation="horizontal">
 
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingBottom="20dp"
-                android:paddingTop="20dp">
-
-                <TextView
-                    android:id="@+id/fsdvsddbd"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="2"
-                    android:text="@string/Room"
-                    android:textColor="#222"
-                    android:textSize="20dp" />
-
-                <Spinner
-
-                    android:id="@+id/spinBedrvdoom"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_vertical"
-                    android:layout_weight="1"
-                    android:entries="@array/num1_10" />
 
             </LinearLayout>
 

@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Aqarat</string>
-    <string name="bathRoom">Aqarat</string>
     <string name="toggle_rent">Rent</string>
     <string name="toggle_sale">Sale</string>
     <string name="Area_menu">Area</string>
@@ -19,7 +18,7 @@
     <string name="StorageDirection">Storage Direction</string>
     <string name="road">Road</string>
     <string name="pool">Pool</string>
-    <string name="Garden">House Age</string>
+    <string name="Garden">Garden</string>
     <string name="HouseAge">House Age</string>
 
 
