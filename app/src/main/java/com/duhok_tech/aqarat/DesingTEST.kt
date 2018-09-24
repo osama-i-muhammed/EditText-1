@@ -18,15 +18,13 @@ class DesingTEST : AppCompatActivity() {
             startActivity(Intent(this, Filter_House::class.java))
         })
 
-        villa.setOnClickListener(View.OnClickListener {
+        villa.setOnClickListener {
             startActivity(Intent(this, Filter_Villa::class.java))
-        })
+        }
 
-        //hELLO
-
-        Apart.setOnClickListener(View.OnClickListener {
+        Apart.setOnClickListener {
             startActivity(Intent(this, Filter_Aprt::class.java))
-        })
+        }
 
         Storage.setOnClickListener(View.OnClickListener {
             startActivity(Intent(this, Filter_Storage::class.java))
