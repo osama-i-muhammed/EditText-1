@@ -231,7 +231,7 @@
                 android:background="@drawable/filter_menu_button"
                 android:orientation="horizontal"
                 android:paddingBottom="8dp"
-                android:paddingTop="8dp">
+                android:paddingTop="9dp">
 
                 <TextView
                     android:layout_width="match_parent"
