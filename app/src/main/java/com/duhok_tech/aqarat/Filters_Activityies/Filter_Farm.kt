@@ -12,6 +12,7 @@ class Filter_Farm : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_filter__farm)
 
+
         //check the Rent and Sale toggle button
         toggleRent.setOnClickListener {
             toggleSale.isChecked = !toggleSale.isChecked
