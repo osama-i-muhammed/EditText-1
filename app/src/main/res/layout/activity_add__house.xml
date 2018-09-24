@@ -40,7 +40,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/toggle_rent"
+                    android:background="@drawable/toggle_rent_sale"
                     android:checked="false"
                     android:textOff="@string/toggle_rent"
                     android:textOn="@string/toggle_rent"
@@ -53,7 +53,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/toggle_sale"
+                    android:background="@drawable/toggle_rent_sale"
                     android:checked="true"
                     android:text="ToggleButton"
                     android:textOff="@string/toggle_sale"
@@ -75,13 +75,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="20dp"
-                android:paddingTop="20dp">
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
 
                 <TextView
                     android:id="@+id/fdbd"
-                    android:layout_width="184dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical|center_horizontal"
                     android:layout_weight="1.5"
                     android:text="@string/Adress"
@@ -92,7 +92,7 @@
                     android:id="@+id/editadress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.5"
+                    android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
@@ -150,13 +150,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="20dp"
-                android:paddingTop="20dp">
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
 
                 <TextView
                     android:id="@+id/price"
-                    android:layout_width="75dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical|center_horizontal"
                     android:layout_weight="1.5"
                     android:text="@string/Price"
@@ -165,9 +165,9 @@
 
                 <EditText
                     android:id="@+id/editText2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.5"
+                    android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
@@ -250,8 +250,6 @@
             </LinearLayout>
 
 
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -260,7 +258,6 @@
 
 
             </LinearLayout>
-
 
 
             <LinearLayout
@@ -290,6 +287,7 @@
                     android:entries="@array/garage_spin" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -298,17 +296,18 @@
 
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="20dp"
-                android:paddingTop="20dp">
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
 
                 <TextView
                     android:id="@+id/area"
-                    android:layout_width="130dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical|center_horizontal"
                     android:layout_weight="1.5"
                     android:text="@string/Area_menu"
@@ -317,13 +316,14 @@
 
                 <EditText
                     android:id="@+id/editarea"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.5"
+                    android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPersonName" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -332,6 +332,7 @@
 
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -435,6 +436,7 @@
                     android:entries="@array/HouseAge_spin" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -462,7 +464,6 @@
                     android:entries="@array/any_yes_no_spin" />
 
             </LinearLayout>
-
 
 
             <LinearLayout
