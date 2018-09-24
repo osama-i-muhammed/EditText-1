@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "674397443983",
+    "firebase_url": "https://kurdistan-aqar.firebaseio.com",
+    "project_id": "kurdistan-aqar",
+    "storage_bucket": "kurdistan-aqar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674397443983:android:2fb5756115c0fc1c",
+        "android_client_info": {
+          "package_name": "com.duhok_tech.aqarat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674397443983-3hf7vcu2th3i44dmc2n26a25r2h5u59m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.duhok_tech.aqarat",
+            "certificate_hash": "c3bcbffc3d9e7d95a363026faffddecd5f1b58e7"
+          }
+        },
+        {
+          "client_id": "674397443983-16jqednlmhfh45nsohqsapv7hl6smicl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzqGKjTkCRCfo7Pr57_ROSasGbsJoDCdk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674397443983-16jqednlmhfh45nsohqsapv7hl6smicl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

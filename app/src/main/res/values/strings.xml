@@ -119,5 +119,14 @@
 
 
     </string-array>
+    <string name="title_activity_main">Map</string>
+    <string name="House">House</string>
+    <string name="filterMenuTip">Filter</string>
+    <string name="Apartment">Apartment</string>
+    <string name="Vila">Villa</string>
+    <string name="PartOfLand">Part of Land</string>
+    <string name="Farm">Farm</string>
+    <string name="Store">Store</string>
+    <string name="Storage">Storage</string>
 
 </resources>
