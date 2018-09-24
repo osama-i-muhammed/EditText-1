@@ -6,6 +6,7 @@
     <string name="Description">Description</string>
     <string name="SwedishRoom">Swedish Room</string>
     <string name="garage">Garage</string>
+    <string name="VillaAge">VillaAge</string>
     <string name="bathroom">Bathroom</string>
     <string name="hall">Hall </string>
     <string name="elevator">Elevator</string>
@@ -19,7 +20,10 @@
     <string name="road">Road</string>
     <string name="pool">Pool</string>
     <string name="Garden">Garden</string>
+    <string name="City">City</string>
+    <string name="ApartAge">ApartAge</string>
     <string name="HouseAge">House Age</string>
+    <string name="EarthDirection">Earth direction</string>
 
 
     <string-array name="garage_spin">
@@ -114,4 +118,5 @@
 
 
     </string-array>
+
 </resources>

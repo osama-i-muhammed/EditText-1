@@ -4,48 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DesingTEST"
-    tools:layout_editor_absoluteY="81dp">
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="359dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ToggleButton
-            android:id="@+id/toggleButton2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/toggle_rent"
-            android:checked="false"
-            android:textOff="@string/toggle_rent"
-            android:textOn="@string/toggle_rent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="1110dp" />
-
-        <ToggleButton
-            android:id="@+id/toggleButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/toggle_sale"
-            android:checked="true"
-            android:text="ToggleButton"
-            android:textOff="@string/toggle_sale"
-            android:textOn="@string/toggle_sale"
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="1110dp" />
-    </LinearLayout>
+    tools:context=".Filter_Storage">
 
     <ScrollView
         android:layout_width="0dp"
@@ -54,10 +13,12 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -65,6 +26,44 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/toggleRent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_rent"
+                    android:checked="false"
+                    android:textOff="@string/toggle_rent"
+                    android:textOn="@string/toggle_rent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="1110dp" />
+
+                <ToggleButton
+                    android:id="@+id/toggleSale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_sale"
+                    android:checked="true"
+                    android:text="ToggleButton"
+                    android:textOff="@string/toggle_sale"
+                    android:textOn="@string/toggle_sale"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:layout_editor_absoluteY="1110dp" />
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#999"
@@ -81,25 +80,26 @@
                 android:paddingTop="20dp">
 
                 <TextView
-                    android:id="@+id/dfersssassdssgrggrg"
+                    android:id="@+id/area"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="2"
-                    android:text="@string/Room"
+                    android:layout_weight="1.5"
+                    android:text="@string/Area_menu"
                     android:textColor="#222"
                     android:textSize="20dp" />
 
                 <Spinner
 
-                    android:id="@+id/spissnner"
+                    android:id="@+id/spinarea"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical"
                     android:layout_weight="1"
-                    android:entries="@array/num1_10" />
+                    android:entries="@array/Area_spin" />
 
             </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -118,26 +118,25 @@
                 android:paddingTop="20dp">
 
                 <TextView
-                    android:id="@+id/dfersssassgrg"
+                    android:id="@+id/price"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="2"
-                    android:text="@string/Room"
+                    android:layout_weight="1.5"
+                    android:text="@string/Price"
                     android:textColor="#222"
                     android:textSize="20dp" />
 
                 <Spinner
 
-                    android:id="@+id/spisccsnnersnner"
+                    android:id="@+id/spinarea"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical"
                     android:layout_weight="1"
-                    android:entries="@array/num1_10" />
+                    android:entries="@array/Price_spin" />
 
             </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -154,32 +153,45 @@
                 android:paddingBottom="20dp"
                 android:paddingTop="20dp">
 
+                <TextView
+                    android:id="@+id/storedirection"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|center_vertical|center_horizontal"
+                    android:layout_weight="1.5"
+                    android:text="@string/StorageDirection"
+                    android:textColor="#222"
+                    android:textSize="20dp" />
 
-                <EditText
+                <Spinner
 
-                    android:id="@+id/ett"
+                    android:id="@+id/spinearth"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical"
                     android:layout_weight="1"
-                    android:hint="@string/Description"
-                    android:inputType="text|textMultiLine"
-                    android:maxLength="200" />
+                    android:entries="@array/HouseDirection_spin" />
 
             </LinearLayout>
 
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#999"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="502dp" />
 
 </android.support.constraint.ConstraintLayout>

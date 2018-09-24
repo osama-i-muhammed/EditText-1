@@ -9,9 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DesingTEST">
-
-        </activity>
+        <activity android:name=".DesingTEST" />
         <activity android:name=".Filter_House">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +17,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Filter_Aprt" />
+        <activity android:name=".Filter_Villa" />
+        <activity android:name=".Filter_Earth" />
+        <activity android:name=".Filter_Farm" />
+        <activity android:name=".Filter_Store" />
+        <activity android:name=".Filter_Storage"></activity>
     </application>
 
 </manifest>
