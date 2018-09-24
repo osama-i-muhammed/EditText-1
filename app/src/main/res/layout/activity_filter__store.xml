@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/toggle_rent"
+                    android:background="@drawable/toggle_rent_sale"
                     android:checked="false"
                     android:textOff="@string/toggle_rent"
                     android:textOn="@string/toggle_rent"
@@ -54,7 +54,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/toggle_sale"
+                    android:background="@drawable/toggle_rent_sale"
                     android:checked="true"
                     android:text="ToggleButton"
                     android:textOff="@string/toggle_sale"
@@ -128,7 +128,7 @@
 
                 <Spinner
 
-                    android:id="@+id/spinarea"
+                    android:id="@+id/spindirection"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical"
@@ -215,12 +215,5 @@
         </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="502dp" />
 
 </android.support.constraint.ConstraintLayout>

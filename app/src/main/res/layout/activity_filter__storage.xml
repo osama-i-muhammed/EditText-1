@@ -22,7 +22,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <LinearLayout
@@ -42,7 +42,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/toggle_rent"
+                    android:background="@drawable/toggle_rent_sale"
                     android:checked="false"
                     android:textOff="@string/toggle_rent"
                     android:textOn="@string/toggle_rent"
@@ -55,7 +55,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/toggle_sale"
+                    android:background="@drawable/toggle_rent_sale"
                     android:checked="true"
                     android:text="ToggleButton"
                     android:textOff="@string/toggle_sale"
@@ -63,6 +63,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     tools:layout_editor_absoluteY="1110dp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -129,7 +130,7 @@
 
                 <Spinner
 
-                    android:id="@+id/spinarea"
+                    android:id="@+id/spinprice"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical"
@@ -137,6 +138,7 @@
                     android:entries="@array/Price_spin" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -183,15 +185,19 @@
 
 
             </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/roundcorner1"
+                android:baselineAligned="false"
+                android:foregroundGravity="bottom"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/filter_icon_blue" />
         </LinearLayout>
     </ScrollView>
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="502dp" />
 
 </android.support.constraint.ConstraintLayout>
