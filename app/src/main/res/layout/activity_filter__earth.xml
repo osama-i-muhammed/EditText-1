@@ -212,15 +212,21 @@
 
         </LinearLayout>
 
-
+        <ImageButton
+            android:id="@+id/btFilterEarth"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/roundcorner1"
+            android:baselineAligned="false"
+            android:foregroundGravity="bottom"
+            android:padding="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/filter_icon_blue" />
     </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="502dp" />
+
 </android.support.constraint.ConstraintLayout>

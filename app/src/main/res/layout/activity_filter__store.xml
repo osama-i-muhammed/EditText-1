@@ -211,7 +211,19 @@
 
             </LinearLayout>
 
-
+            <ImageButton
+                android:id="@+id/btFilterStore"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/roundcorner1"
+                android:baselineAligned="false"
+                android:foregroundGravity="bottom"
+                android:padding="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/filter_icon_blue" />
         </LinearLayout>
     </ScrollView>
 
