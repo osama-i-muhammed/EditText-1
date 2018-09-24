@@ -13,7 +13,7 @@ class DesingTEST : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_desing_test)
 
-        //SAlar
+        //SAlark
 
         house.setOnClickListener(View.OnClickListener {
             startActivity(Intent(this, Filter_House::class.java))
