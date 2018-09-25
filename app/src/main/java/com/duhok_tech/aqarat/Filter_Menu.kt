@@ -13,9 +13,9 @@ class Filter_Menu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_filter__menu)
 
-//        btFilterMenuHouse.setOnClickListener { startActivity(Intent(this,Filter_House::class.java)) }
-//        btFilterMenuApartment.setOnClickListener { startActivity(Intent(this,Filter_Aprt::class.java)) }
-//        btFilterMenuVilla.setOnClickListener { startActivity(Intent(this,Filter_Villa::class.java)) }
+        btFilterMenuHouse.setOnClickListener { startActivity(Intent(this,Filter_House::class.java)) }
+        btFilterMenuApartment.setOnClickListener { startActivity(Intent(this,Filter_Aprt::class.java)) }
+        btFilterMenuVilla.setOnClickListener { startActivity(Intent(this,Filter_Villa::class.java)) }
         btFilterMenuFarm.setOnClickListener { startActivity(Intent(this,Filter_Farm::class.java)) }
         btFilterMenuPartOfLand.setOnClickListener { startActivity(Intent(this,Filter_Earth::class.java)) }
         btFilterMenuStore.setOnClickListener { startActivity(Intent(this,Filter_Store::class.java)) }
