@@ -138,5 +138,6 @@
     <string name="ContactAs">Contact as</string>
     <string name="AboutAs">About</string>
     <string name="Feedback">Feedback</string>
+    <string name="Filter">Filter</string>
 
 </resources>
