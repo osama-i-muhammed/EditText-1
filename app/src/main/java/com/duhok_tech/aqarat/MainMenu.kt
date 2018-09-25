@@ -16,7 +16,7 @@ class MainMenu : AppCompatActivity() {
         setContentView(R.layout.activity_main_menu)
 //
 //        getWindow().setWindowAnimations(Animation.INFINITE)
-
+//Salar's Final Test
         ssss.setOnClickListener {
             finish()
         }
