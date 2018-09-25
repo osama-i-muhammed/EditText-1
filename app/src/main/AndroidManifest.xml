@@ -51,7 +51,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Filter_Menu" />
-        <activity android:name=".MainMenu" />
+        <activity android:name=".menuActivit.MainMenu" />
         <activity android:name=".AddMenu"></activity>
     </application>
 
