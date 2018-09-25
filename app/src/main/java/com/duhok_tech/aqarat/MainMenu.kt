@@ -10,12 +10,13 @@ import kotlinx.android.synthetic.main.activity_main_menu.*
 
 class MainMenu : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu)
 //
 //        getWindow().setWindowAnimations(Animation.INFINITE)
-
+//Salar's Final Test
         ssss.setOnClickListener {
             finish()
         }
