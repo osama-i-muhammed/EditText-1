@@ -132,5 +132,11 @@
     <string name="Farm">Farm</string>
     <string name="Store">Store</string>
     <string name="Storage">Storage</string>
+    <string name="Account">Account</string>
+    <string name="addYourHouse">Add your House</string>
+    <string name="Information">Information</string>
+    <string name="ContactAs">Contact as</string>
+    <string name="AboutAs">About</string>
+    <string name="Feedback">Feedback</string>
 
 </resources>

@@ -86,62 +86,34 @@
             </fragment>
         </LinearLayout>
 
-        <HorizontalScrollView
+        <LinearLayout
             android:id="@+id/horizontalScrollView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#123"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-            <LinearLayout
+            <ImageView
+                android:id="@+id/btOpenFilterMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/filter_icon_blue" />
+
+            <Space
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#0f0"
-                android:orientation="horizontal">
+                android:layout_weight="1" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="sdfsd" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="eeeeee" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="eeeeee" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="eeeeee" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="eeeeee" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="eeeeee" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="eeeeee" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="eeeeee" />
-            </LinearLayout>
-        </HorizontalScrollView>
+            <ImageView
+                android:id="@+id/btToMainMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/filter_icon_blue" />
+        </LinearLayout>
 
     </android.support.constraint.ConstraintLayout>
 

@@ -16,9 +16,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DesingTEST">
-
-        </activity>
+        <activity android:name=".DesingTEST" />
+        <activity android:name=".InsertActivit.Add_Apart"></activity>
+        <activity android:name=".InsertActivit.Add_Earth" />
+        <activity android:name=".InsertActivit.Add_Farm" />
+        <activity android:name=".InsertActivit.Add_House" />
+        <activity android:name=".InsertActivit.Add_Storage" />
+        <activity android:name=".InsertActivit.Add_Store" />
+        <activity android:name=".InsertActivit.Add_Villa" />
         <activity android:name=".Filters_Activityies.Filter_House" />
         <activity android:name=".Filters_Activityies.Filter_Aprt" />
         <activity android:name=".Filters_Activityies.Filter_Villa" />
@@ -26,7 +31,6 @@
         <activity android:name=".Filters_Activityies.Filter_Farm" />
         <activity android:name=".Filters_Activityies.Filter_Store" />
         <activity android:name=".Filters_Activityies.Filter_Storage" />
-        <activity android:name=".InsertActivit.Add_House" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -39,17 +43,16 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main"></activity>
-        <activity android:name=".Filter_Menu">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity android:name=".Filter_Menu" />
+        <activity android:name=".MainMenu" />
+        <activity android:name=".AddMenu"></activity>
     </application>
 
 </manifest>

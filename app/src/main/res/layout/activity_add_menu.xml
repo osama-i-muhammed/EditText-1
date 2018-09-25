@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Filter_Menu">
+    tools:context=".AddMenu">
 
     <ScrollView
         android:layout_width="0dp"
@@ -34,7 +34,7 @@
                 android:textSize="20dp" />
 
             <LinearLayout
-                android:id="@+id/btFilterMenuHouse"
+                android:id="@+id/btAddMenuHouse"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -66,7 +66,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/btFilterMenuApartment"
+                android:id="@+id/btAddMenuApartment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -98,7 +98,7 @@
 
 
             <LinearLayout
-                android:id="@+id/btFilterMenuVilla"
+                android:id="@+id/btAddMenuVilla"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -129,7 +129,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/btFilterMenuPartOfLand"
+                android:id="@+id/btAddMenuPartOfLand"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -160,7 +160,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/btFilterMenuFarm"
+                android:id="@+id/btAddMenuFarm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -191,7 +191,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/btFilterMenuStore"
+                android:id="@+id/btAddMenuStore"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -222,7 +222,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/btFilterMenuStorage"
+                android:id="@+id/btAddMenuStorage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
