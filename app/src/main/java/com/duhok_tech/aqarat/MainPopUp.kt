@@ -17,10 +17,7 @@ class MainPopUp : Activity() {
         setContentView(R.layout.activity_main_pop_up)
         val dm = DisplayMetrics()
 
-        try {
-
-
-        }catch (ex:Exception){}
+        txtt.text = Intent().getStringExtra("tit")
         windowManager.defaultDisplay.getMetrics(dm)
 
         val w = dm.widthPixels
