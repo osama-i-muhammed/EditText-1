@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".DesingTEST" />
-        <activity android:name=".InsertActivit.Add_Apart"></activity>
+        <activity android:name=".InsertActivit.Add_Apart" />
         <activity android:name=".InsertActivit.Add_Earth" />
         <activity android:name=".InsertActivit.Add_Farm" />
         <activity android:name=".InsertActivit.Add_House" />
@@ -43,16 +43,19 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Filter_Menu" />
+        <activity android:name=".MainMenu" />
+        <activity android:name=".AddMenu" />
+        <activity android:name=".MinMapActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Filter_Menu" />
-        <activity android:name=".MainMenu" />
-        <activity android:name=".AddMenu"></activity>
+        <activity android:name=".MainPopUp"
+            android:theme="@style/AppTheme.popUp"></activity>
     </application>
 
 </manifest>
