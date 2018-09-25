@@ -16,7 +16,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DesingTEST" />
         <activity android:name=".InsertActivit.Add_Apart"></activity>
         <activity android:name=".InsertActivit.Add_Earth" />
         <activity android:name=".InsertActivit.Add_Farm" />
@@ -31,28 +30,20 @@
         <activity android:name=".Filters_Activityies.Filter_Farm" />
         <activity android:name=".Filters_Activityies.Filter_Store" />
         <activity android:name=".Filters_Activityies.Filter_Storage" />
-        <!--
-             The API key for Google Maps-based APIs is defined as a string resource.
-             (See the file "res/values/google_maps_api.xml").
-             Note that the API key is linked to the encryption key used to sign the APK.
-             You need a different API key for each encryption key, including the release key that is used to
-             sign the APK for publishing.
-             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
-        -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
-
-        <activity android:name=".MainActivity">
+        <activity android:name=".menuActivit.Aboutus" />
+        <activity android:name=".menuActivit.Call" />
+        <activity android:name=".menuActivit.InformationAbouApp" />
+        <activity android:name=".MainPopUp" android:theme="@style/AppTheme.popUp"/>
+        <activity android:name=".Filter_Menu" />
+        <activity android:name=".MainMenu" />
+        <activity android:name=".AddMenu"/>
+        <activity android:name=".MinMapActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Filter_Menu" />
-        <activity android:name=".MainMenu" />
-        <activity android:name=".AddMenu"></activity>
     </application>
 
 </manifest>

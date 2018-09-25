@@ -31,10 +31,10 @@ class MinMapActivity : AppCompatActivity() {
         arHouse.add(House(1,2,"Grebase, Ashty",3,180000.0,2,2,1,1,230.0,36.864176, 42.987600))
         arHouse.add(House(1,2,"Grebase, Ashty",3,180000.0,2,2,1,1,230.0,36.861830, 42.966947))
         arHouse.add(House(1,2,"Grebase, Ashty",3,180000.0,2,2,1,1,230.0,36.852181, 42.985830))
-        var mMap = Mapbox.getInstance(this, getString(R.string.mapbox_access_token))
+        Mapbox.getInstance(this, getString(R.string.mapbox_access_token))
 
         val iconFactory = IconFactory.getInstance(this)
-        var icon = iconFactory.fromResource(R.drawable.mmmm)
+
         mapView.onCreate(savedInstanceState)
         mapView.getMapAsync(OnMapReadyCallback { mapboxMap ->
 
@@ -51,10 +51,10 @@ class MinMapActivity : AppCompatActivity() {
 
             mapboxMap.setOnMarkerClickListener(object : MapboxMap.OnMarkerClickListener {
                 override fun onMarkerClick(marker: Marker): Boolean {
-                    val s = arHouse.get(marker.title.toInt())
-                    val sented:ArrayList<House> = ArrayList<House>()
-                    sented.add(House(s.House_ID,s.House_RentSale,s.House_Adress,s.House_Room,s.House_Price,s.House_bathroom,s.House_Livingroom,s.House_Swedish_Room,s.House_Garage,s.House_Area,s.House_lat,s.House_lng))
-                    startActivity(Intent(this@MinMapActivity, MainPopUp::class.java).putExtra("tit",sented ))
+//                    val s = arHouse.get(marker.title.toInt())
+//                    val sented:ArrayList<House> = ArrayList<House>()
+//                    sented.add(House(s.House_ID,s.House_RentSale,s.House_Adress,s.House_Room,s.House_Price,s.House_bathroom,s.House_Livingroom,s.House_Swedish_Room,s.House_Garage,s.House_Area,s.House_lat,s.House_lng))
+                    startActivity(Intent(this@MinMapActivity, MainPopUp::class.java).putExtra("tit",marker.title.toString() ))
                     Toast.makeText(this@MinMapActivity, marker.position.latitude.toString(), Toast.LENGTH_LONG).show()
                     return true
                 }
