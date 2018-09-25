@@ -3,6 +3,7 @@ package com.duhok_tech.aqarat
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.duhok_tech.aqarat.menuActivit.MainMenu
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
                 .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
 
-        btToMainMenu.setOnClickListener { startActivity(Intent(this,MainMenu::class.java)) }
+        btToMainMenu.setOnClickListener { startActivity(Intent(this, MainMenu::class.java)) }
         btOpenFilterMenu.setOnClickListener { startActivity(Intent(this,Filter_Menu::class.java)) }
     }
 

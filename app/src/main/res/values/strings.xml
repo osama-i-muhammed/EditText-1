@@ -139,7 +139,5 @@
     <string name="AboutAs">About</string>
     <string name="Feedback">Feedback</string>
     <string name="Filter">Filter</string>
-    <string name="mapbox_access_token">pk.eyJ1Ijoic2FsYXJwcm8iLCJhIjoiY2ptaTF4M25tMDBlZDN3cThodGl6Mm54YyJ9.SSsJ2y-PX0cYweQJzXJ3Hw</string>
-
 
 </resources>
