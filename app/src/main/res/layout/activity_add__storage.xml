@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InsertActivit.Add_House">
+    tools:context=".InsertActivit.Add_Storage">
 
     <ScrollView
         android:layout_width="0dp"
@@ -99,54 +99,6 @@
 
             </LinearLayout>
 
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#999"
-                android:orientation="horizontal">
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingBottom="20dp"
-                android:paddingTop="20dp">
-
-                <TextView
-                    android:id="@+id/bedroom"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="1.5"
-                    android:text="@string/Room"
-                    android:textColor="#222"
-                    android:textSize="20dp" />
-
-                <Spinner
-
-                    android:id="@+id/spinbedroom"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_vertical"
-                    android:layout_weight="1"
-                    android:entries="@array/num1_10" />
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#999"
-                android:orientation="horizontal">
-
-
-            </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -165,137 +117,13 @@
                     android:textSize="20dp" />
 
                 <EditText
-                    android:id="@+id/editText2"
+                    android:id="@+id/editprice"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="@string/price"
                     android:inputType="textPersonName" />
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#999"
-                android:orientation="horizontal">
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingBottom="20dp"
-                android:paddingTop="20dp">
-
-                <TextView
-                    android:id="@+id/bathroom"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="1.5"
-                    android:text="@string/bathroom"
-                    android:textColor="#222"
-                    android:textSize="20dp" />
-
-                <Spinner
-
-                    android:id="@+id/spinbathroom"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_vertical"
-                    android:layout_weight="1"
-                    android:entries="@array/num1_10" />
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#999"
-                android:orientation="horizontal">
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingBottom="20dp"
-                android:paddingTop="20dp">
-
-                <TextView
-                    android:id="@+id/swedishroom"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="1.5"
-                    android:text="@string/SwedishRoom"
-                    android:textColor="#222"
-                    android:textSize="20dp" />
-
-                <Spinner
-
-                    android:id="@+id/spinswedishroom"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_vertical"
-                    android:layout_weight="1"
-                    android:entries="@array/num1_10" />
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#999"
-                android:orientation="horizontal">
-
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingBottom="20dp"
-                android:paddingTop="20dp">
-
-                <TextView
-                    android:id="@+id/garage"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="1.5"
-                    android:text="@string/garage"
-                    android:textColor="#222"
-                    android:textSize="20dp" />
-
-                <Spinner
-
-                    android:id="@+id/spingarage"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_vertical"
-                    android:layout_weight="1"
-                    android:entries="@array/garage_spin" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#999"
-                android:orientation="horizontal">
-
 
             </LinearLayout>
 
@@ -326,16 +154,6 @@
                     android:inputType="textPersonName" />
 
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#999"
-                android:orientation="horizontal">
-
-
-            </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -344,33 +162,23 @@
                 android:paddingTop="20dp">
 
                 <TextView
-                    android:id="@+id/housedirection"
+                    android:id="@+id/storage"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="left|center_vertical|center_horizontal"
                     android:layout_weight="1.5"
-                    android:text="@string/HouseDirection"
+                    android:text="@string/StoreDirection"
                     android:textColor="#222"
                     android:textSize="20dp" />
 
                 <Spinner
 
-                    android:id="@+id/spinhousedirection"
+                    android:id="@+id/spinstoredirction"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical"
                     android:layout_weight="1"
                     android:entries="@array/HouseDirection_spin" />
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#999"
-                android:orientation="horizontal">
-
 
             </LinearLayout>
 
@@ -401,73 +209,6 @@
                     android:entries="@array/rosd_spin" />
 
             </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#999"
-                android:orientation="horizontal">
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingBottom="20dp"
-                android:paddingTop="20dp">
-
-                <TextView
-                    android:id="@+id/houseage"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="1.5"
-                    android:text="@string/HouseAge"
-                    android:textColor="#222"
-                    android:textSize="20dp" />
-
-                <Spinner
-
-                    android:id="@+id/spinhouseage"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_vertical"
-                    android:layout_weight="1"
-                    android:entries="@array/HouseAge_spin" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingBottom="20dp"
-                android:paddingTop="20dp">
-
-                <TextView
-                    android:id="@+id/garden"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_vertical|center_horizontal"
-                    android:layout_weight="1.5"
-                    android:text="@string/Garden"
-                    android:textColor="#222"
-                    android:textSize="20dp" />
-
-                <Spinner
-
-                    android:id="@+id/spingarden"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_vertical"
-                    android:layout_weight="1"
-                    android:entries="@array/any_yes_no_spin" />
-
-            </LinearLayout>
-
             <EditText
                 android:id="@+id/editdisc"
                 android:layout_width="match_parent"
@@ -497,7 +238,6 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
-
         </LinearLayout>
     </ScrollView>
 
