@@ -51,7 +51,7 @@ class MainPopUp : Activity() {
                 Info[5][0] = getString(R.string.garage) + " : "
                 Info[5][1] = if (intent.getIntExtra(Const.GARAGE, 0) == 0)  " No Garage" else intent.getIntExtra(Const.GARAGE, 0).toString() + " Car"
                 Info[6][0] = getString(R.string.Area) + " : "
-                Info[6][1] = intent.getDoubleExtra(Const.AREA, 0.0).toString() + " m2"
+                Info[6][1] = DecimalFormat("#,###").format(intent.getDoubleExtra(Const.AREA, 0.0)) + " m2"
                 setInfo(Info)
             }
             Const.APARTMENT -> {
@@ -73,7 +73,7 @@ class MainPopUp : Activity() {
                 Info[4][0] = getString(R.string.SwedishRoom) + " : "
                 Info[4][1] = intent.getIntExtra(Const.SWIDSHROOM, 0).toString()
                 Info[5][0] = getString(R.string.Area) + " : "
-                Info[5][1] = intent.getDoubleExtra(Const.AREA, 0.0).toString() + " m2"
+                Info[5][1] = DecimalFormat("#,###").format(intent.getDoubleExtra(Const.AREA, 0.0)) + " m2"
                 setInfo(Info)
             }
         }
