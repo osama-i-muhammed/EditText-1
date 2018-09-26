@@ -20,10 +20,10 @@
             android:id="@+id/mapView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            mapbox:mapbox_cameraTargetLat="36.859816"
-            mapbox:mapbox_cameraTargetLng="42.997655"
-            mapbox:mapbox_styleUrl="mapbox://styles/mapbox/streets-v10"
-            mapbox:mapbox_cameraZoom="11" />
+            mapbox:mapbox_cameraTargetLat="36.86686"
+            mapbox:mapbox_cameraTargetLng="42.99104"
+            mapbox:mapbox_styleUrl="mapbox://styles/mapbox/outdoors-v10"
+            mapbox:mapbox_cameraZoom="11.8" />
         <!--<com.mapbox.mapboxsdk.maps.MapView-->
         <!--android:id="@+id/mapView"-->
         <!--android:layout_width="match_parent"-->
@@ -36,6 +36,14 @@
         android:id="@+id/horizontalScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:animateLayoutChanges="false"
+        android:animationCache="false"
+        android:isScrollContainer="false"
+        android:keepScreenOn="false"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarSize="0dp"
+        android:scrollbars="none"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">

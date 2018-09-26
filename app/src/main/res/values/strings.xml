@@ -9,7 +9,7 @@
     <string name="garage">Garage</string>
     <string name="VillaAge">VillaAge</string>
     <string name="bathroom">Bathroom</string>
-    <string name="hall">Hall </string>
+    <string name="hall">Living Room</string>
     <string name="elevator">Elevator</string>
     <string name="floor">Floor</string>
     <string name="Room">Bedroom</string>
@@ -27,9 +27,11 @@
     <string name="Adress">Adress</string>
     <string name="price">price eg:150000$</string>
     <string name="EarthDirection">Earth direction</string>
-    <string name="Area">Area eg:250 m2</string>
+    <string name="Area">Area</string>
+    <string name="Areaex">Area eg:250 m2</string>
     <string name="discription">Enter Discription About Your House</string>
-    <string name="Cityname">e.g:Avro City</string>
+    <string name="Cityname">City Name</string>
+    <string name="Citynameex">e.g:Avro City</string>
 
 
     <string-array name="garage_spin">

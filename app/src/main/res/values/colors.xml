@@ -6,5 +6,6 @@
     <color name="colorLight">#E0F2F1</color>
     <color name="colorDark">#000000</color>
     <color name="colorTxt">#115693</color>
+    <color name="colorTxt2">#111623</color>
     <color name="colorMainTopMenu">#662196f3</color>
 </resources>
