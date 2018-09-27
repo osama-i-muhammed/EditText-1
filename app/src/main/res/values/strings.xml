@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">Aqarat</string>
-    <string name="app_dname">Aqarat</string>
+    <string name="app_name">Kurdistan real estates</string>
     <string name="toggle_rent">Rent</string>
     <string name="toggle_sale">Sale</string>
     <string name="Area_menu">Area</string>
@@ -24,12 +23,13 @@
     <string name="City">City</string>
     <string name="ApartAge">ApartAge</string>
     <string name="HouseAge">House Age</string>
-    <string name="Adress">Adress</string>
-    <string name="price">price eg:150000$</string>
+    <string name="Adress">Address</string>
+    <string name="price">Price</string>
+    <string name="priceex">price eg:150000$</string>
     <string name="EarthDirection">Earth direction</string>
     <string name="Area">Area</string>
     <string name="Areaex">Area eg:250 m2</string>
-    <string name="discription">Enter Discription About Your House</string>
+    <string name="discription">Enter Description About Your House</string>
     <string name="Cityname">City Name</string>
     <string name="Citynameex">e.g:Avro City</string>
 
@@ -143,7 +143,7 @@
     <string name="Filter">Filter</string>
     <string name="About_us">ئەم کومپانیا دهوك تێك یا کارێن تەکنولوجیا رابووینە ب دروستکرنا ئەپلیکشنێ (عقارات کوردستان) دبیت ئێکەم ئەپلیکەشن دەربارەی عەقارات ل سەرانسەری کوردستانێ و عێراقێ .مەرەم ژ دروستکرنا ڤێ ئەپلیکەشنێ ئەوە ئەگەر تە خانیەك یان ئاڤاهیەك یان شوقەك یان خانیەکێ گوزاری  بڤێت ب فروشی یان ژی ب کری یان کرێ کەی تو دشێ لڤێرە ریکلاما خوو بکەی ... بو وەرگرتنا پتر زانیاریا دەرباری ئەپلیکەشنێ پەیوەندی ب دهوك تێك بکە..</string>
     <string name="HowToCreateNewUser">ooooooo</string>
-    <string name="How_to_add_a_new_ad">oooooooooo</string>
+    <string name="How_to_add_a_new_ad">How to  advertise your home for sale</string>
     <string name="How_to_update_an_ad">ooooooooo</string>
     <string name="How_to_use_a_filter">oooooooooo</string>
     <string name="mapbox_access_token">pk.eyJ1Ijoic2FsYXJwcm8iLCJhIjoiY2ptaTF4M25tMDBlZDN3cThodGl6Mm54YyJ9.SSsJ2y-PX0cYweQJzXJ3Hw</string>

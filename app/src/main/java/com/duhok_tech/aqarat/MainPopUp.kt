@@ -96,23 +96,21 @@ class MainPopUp : Activity() {
         window.attributes = params
 
 
-        var arIMG = ArrayList<ImageView>()
 
         var imgR = ArrayList<String>()
-        imgR.add("https://cnet4.cbsistatic.com/img/9vEVqVx3KOqT0RGAswuhGv3YFSk=/830x467/2017/10/31/a22348c2-6d9b-4c45-9b4d-e5e2d1ce0344/iphone-x-comparisons-01.jpg")
-        imgR.add("https://pbs.twimg.com/profile_images/817389061564493825/c8wrPD8L_400x400.jpg")
-        imgR.add("https://www.boostmobile.com/content/dam/boostmobile/en/products/phones/apple/iphone-6s/space-gray/device-front.png.transform/pdpCarousel/image.jpg")
-        imgR.add("https://pbs.twimg.com/profile_images/817389061564493825/c8wrPD8L_400x400.jpg")
-        imgR.add("https://www.google.iq/logos/doodles/2018/googles-20th-birthday-6342583134453760.7-s.png")
-        imgR.add("https://pbs.twimg.com/profile_images/817389061564493825/c8wrPD8L_400x400.jpg")
-        imgR.add("https://www.google.iq/logos/doodles/2018/googles-20th-birthday-6342583134453760.7-s.png")
-        imgR.add("https://pbs.twimg.com/profile_images/817389061564493825/c8wrPD8L_400x400.jpg")
+        imgR.add("https://i3.au.reastatic.net/640x480/23c94a60c4138ecf26f81753c69ce5d615188061d6333a585d01c36efe58e7c6/image2.jpg")
+        imgR.add("https://i4.au.reastatic.net/640x480/fc2fa861df8e8da18b51e3fe261c5c9407f144f67668dcb5a866b858c44fb389/image3.jpg")
+        imgR.add("http://blog.nkdroidsolutions.com/wp-content/uploads/2016/02/device-2016-02-20-205832-1.png")
+        imgR.add("https://i1.au.reastatic.net/640x480/b27cb6133c40f0d7e93e23303be79cb853bbe1897397a06461a4942f2d347072/image4.jpg")
+        imgR.add("https://i2.au.reastatic.net/640x480/e3df2b24e4de22a628e261d3c0fe0fbf8a8ba7743841e59beded5f1f58e91cc0/image5.jpg")
+        imgR.add("https://i3.au.reastatic.net/640x480/3ee7530bc207c6f519cd8950e322af8f0a51e88d7d88f28dc69ad9b4973c360c/image6.jpg")
+        imgR.add("https://i4.au.reastatic.net/640x480/8ff7b14e7714e89c0c3fa109d1da029eaa2a23a904ccb7b02601470d70ccc806/image7.jpg")
+        imgR.add("https://i1.au.reastatic.net/640x480/6540947aec9747c60628e8383c744c3c5dfb8cadd1745f3eb4636038f49b4146/image8.jpg")
+        imgR.add("https://i2.au.reastatic.net/640x480/4d4d09062f7e26848cc684e1365661fea1f4c630a18cfbdb7863d4e2f34d9b0c/image9.jpg")
+        imgR.add("https://i3.au.reastatic.net/640x480/52b2681fccbec82329e17c6a9b9c8543fbadad4d4eb16bb07108f89eac018ea0/image10.jpg")
+        imgR.add("https://i4.au.reastatic.net/640x480/dbf66aecc569e475d92de9d2e0bad5e218ae89829532fb506dd58ede2e4ab90c/image11.jpg")
+        imgR.add("https://i4.au.reastatic.net/640x480/79b22ab381bd465a12ec793f97c9d9b145cf6c544dab8990bc8f7fa54e9314be/floorplan1.jpg")
 
-        arIMG.add(ImageView(this))
-        arIMG.add(ImageView(this))
-        arIMG.add(ImageView(this))
-        arIMG.add(ImageView(this))
-        arIMG.add(ImageView(this))
 
         val d = resources.getDimension(R.dimen.padd).toInt()
         var lp: LinearLayout.LayoutParams? = null
@@ -126,6 +124,7 @@ class MainPopUp : Activity() {
             lp = LinearLayout.LayoutParams(iv.layoutParams)
             lp.setMargins(d, d, d, d)
             iv.layoutParams = lp
+            iv.scaleType = ImageView.ScaleType.FIT_CENTER
             iv.layoutParams.height = resources.getDimension(R.dimen.imageview_height).toInt()
             iv.layoutParams.width = resources.getDimension(R.dimen.imageview_height).toInt()
             iv.setOnClickListener {
@@ -182,14 +181,14 @@ class MainPopUp : Activity() {
 
     fun findePhotoByTyoe(type: String): Int {
         when (type) {
-            "house" -> return R.drawable.house
-            "villa" -> return R.drawable.villa
-            "apartment" -> return R.drawable.apartment
-            "store" -> return R.drawable.store
-            "Storage" -> return R.drawable.storage
-            "land" -> return R.drawable.land
-            "Farm" -> return R.drawable.field
-            else -> return R.drawable.land
+            Const.HOUSE -> return R.drawable.house
+            Const.VILLA -> return R.drawable.villa
+            Const.APARTMENT -> return R.drawable.apartment
+            Const.STORE -> return R.drawable.store
+            Const.STTORAGE -> return R.drawable.storage
+            Const.LAND -> return R.drawable.land
+            Const.LAND -> return R.drawable.field
+            else -> return R.drawable.house
         }
     }
 }

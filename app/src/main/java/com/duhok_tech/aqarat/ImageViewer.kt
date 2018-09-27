@@ -57,11 +57,8 @@ class ImageViewer : Activity() {
             var iv = ImageView(this)
             Picasso.get().load(imageID).into(iv)
             viewFlipper.addView(iv)
-            iv.layoutParams = FrameLayout.LayoutParams(FrameLayout.LayoutParams.FILL_PARENT, FrameLayout.LayoutParams.FILL_PARENT)
-            iv.setOnClickListener {
-                Toast.makeText(this, iv.background.toString(), Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this, ImageViewer::class.java).putExtra("img", imgR))
-            }
+            iv.scaleType = ImageView.ScaleType.FIT_CENTER
+
         }
 
     }

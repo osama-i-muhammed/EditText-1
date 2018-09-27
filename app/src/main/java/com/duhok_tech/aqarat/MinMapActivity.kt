@@ -122,14 +122,14 @@ class MinMapActivity : AppCompatActivity() {
 
     fun cheakMapPhoto(type: String): Int {
         when (type) {
-            "house" -> return R.drawable.house_map
-            "villa" -> return R.drawable.villa_map
-            "apartment" -> return R.drawable.apartment_map
-            "store" -> return R.drawable.shop_map
-            "Storage" -> return R.drawable.warehouse_map
-            "land" -> return R.drawable.land_map
-            "Farm" -> return R.drawable.field_map
-            else -> return R.drawable.land_map
+            Const.HOUSE -> return R.drawable.house_map
+            Const.VILLA -> return R.drawable.villa_map
+            Const.APARTMENT -> return R.drawable.apartment_map
+            Const.STORE -> return R.drawable.shop_map
+            Const.STTORAGE -> return R.drawable.warehouse_map
+            Const.LAND -> return R.drawable.land_map
+            Const.LAND -> return R.drawable.field_map
+            else -> return R.drawable.house_map
         }
     }
 
