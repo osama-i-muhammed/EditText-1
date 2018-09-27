@@ -2,6 +2,9 @@ package com.duhok_tech.aqarat
 
 import android.annotation.SuppressLint
 import android.app.Activity
+import android.content.Intent
+import android.graphics.drawable.Drawable
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.support.annotation.RequiresApi
@@ -10,9 +13,11 @@ import android.view.Gravity
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import com.duhok_tech.aqarat.Tools.Const
 import com.duhok_tech.aqarat.data.Apartment
 import com.duhok_tech.aqarat.data.House
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_main_pop_up.*
 import java.text.DecimalFormat
 
@@ -28,7 +33,7 @@ class MainPopUp : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_pop_up)
-        val dm = DisplayMetrics()
+
         when (intent.getStringExtra(Const.TYPE)) {
             Const.HOUSE -> {
                 ivBuildType.background = getDrawable(findePhotoByTyoe(intent.getStringExtra(Const.TYPE)))
@@ -49,7 +54,7 @@ class MainPopUp : Activity() {
                 Info[4][0] = getString(R.string.SwedishRoom) + " : "
                 Info[4][1] = intent.getIntExtra(Const.SWIDSHROOM, 0).toString()
                 Info[5][0] = getString(R.string.garage) + " : "
-                Info[5][1] = if (intent.getIntExtra(Const.GARAGE, 0) == 0)  " No Garage" else intent.getIntExtra(Const.GARAGE, 0).toString() + " Car"
+                Info[5][1] = if (intent.getIntExtra(Const.GARAGE, 0) == 0) " No Garage" else intent.getIntExtra(Const.GARAGE, 0).toString() + " Car"
                 Info[6][0] = getString(R.string.Area) + " : "
                 Info[6][1] = DecimalFormat("#,###").format(intent.getDoubleExtra(Const.AREA, 0.0)) + " m2"
                 setInfo(Info)
@@ -78,11 +83,9 @@ class MainPopUp : Activity() {
             }
         }
 
-        //set Info In PopUp Layout
 
-
+        val dm = DisplayMetrics()
         windowManager.defaultDisplay.getMetrics(dm)
-
         val w = dm.widthPixels
         val h = dm.heightPixels
         window.setLayout(w, (h * .7).toInt())
@@ -95,6 +98,16 @@ class MainPopUp : Activity() {
 
         var arIMG = ArrayList<ImageView>()
 
+        var imgR = ArrayList<String>()
+        imgR.add("https://cnet4.cbsistatic.com/img/9vEVqVx3KOqT0RGAswuhGv3YFSk=/830x467/2017/10/31/a22348c2-6d9b-4c45-9b4d-e5e2d1ce0344/iphone-x-comparisons-01.jpg")
+        imgR.add("https://pbs.twimg.com/profile_images/817389061564493825/c8wrPD8L_400x400.jpg")
+        imgR.add("https://www.boostmobile.com/content/dam/boostmobile/en/products/phones/apple/iphone-6s/space-gray/device-front.png.transform/pdpCarousel/image.jpg")
+        imgR.add("https://pbs.twimg.com/profile_images/817389061564493825/c8wrPD8L_400x400.jpg")
+        imgR.add("https://www.google.iq/logos/doodles/2018/googles-20th-birthday-6342583134453760.7-s.png")
+        imgR.add("https://pbs.twimg.com/profile_images/817389061564493825/c8wrPD8L_400x400.jpg")
+        imgR.add("https://www.google.iq/logos/doodles/2018/googles-20th-birthday-6342583134453760.7-s.png")
+        imgR.add("https://pbs.twimg.com/profile_images/817389061564493825/c8wrPD8L_400x400.jpg")
+
         arIMG.add(ImageView(this))
         arIMG.add(ImageView(this))
         arIMG.add(ImageView(this))
@@ -103,14 +116,22 @@ class MainPopUp : Activity() {
 
         val d = resources.getDimension(R.dimen.padd).toInt()
         var lp: LinearLayout.LayoutParams? = null
-        for (iv in arIMG) {
-            iv.background = getDrawable(R.drawable.house)
+
+        for (imageID in imgR) {
+            var iv = ImageView(this)
+//            iv.background = getDrawable(imageID)
+            Picasso.get().load(imageID).into(iv)
+            //imgR.add(iv.background)
             cdcd.addView(iv)
             lp = LinearLayout.LayoutParams(iv.layoutParams)
             lp.setMargins(d, d, d, d)
             iv.layoutParams = lp
             iv.layoutParams.height = resources.getDimension(R.dimen.imageview_height).toInt()
             iv.layoutParams.width = resources.getDimension(R.dimen.imageview_height).toInt()
+            iv.setOnClickListener {
+//                                Toast.makeText(this,iv.background.toString(),Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this, ImageViewer::class.java).putExtra("img",imgR))
+            }
         }
 
 

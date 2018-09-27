@@ -2,5 +2,5 @@
 <resources>
     <dimen name="imageview_width">100dp</dimen>
     <dimen name="imageview_height">100dp</dimen>
-    <dimen name="padd">10dp</dimen>
+    <dimen name="padd">3dp</dimen>
 </resources>

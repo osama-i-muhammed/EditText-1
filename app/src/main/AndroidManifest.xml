@@ -9,7 +9,6 @@
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/house"
@@ -17,7 +16,7 @@
         android:roundIcon="@drawable/house"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InsertActivit.Add_Apart"></activity>
+        <activity android:name=".InsertActivit.Add_Apart" />
         <activity android:name=".InsertActivit.Add_Earth" />
         <activity android:name=".InsertActivit.Add_Farm" />
         <activity android:name=".InsertActivit.Add_House" />
@@ -34,10 +33,12 @@
         <activity android:name=".menuActivit.Aboutus" />
         <activity android:name=".menuActivit.Call" />
         <activity android:name=".menuActivit.InformationAbouApp" />
-        <activity android:name=".MainPopUp" android:theme="@style/AppTheme.popUp"/>
+        <activity
+            android:name=".MainPopUp"
+            android:theme="@style/AppTheme.popUp" />
         <activity android:name=".Filter_Menu" />
         <activity android:name=".MainMenu" />
-        <activity android:name=".AddMenu"/>
+        <activity android:name=".AddMenu" />
         <activity android:name=".MinMapActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,6 +46,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ImageViewer"
+            android:theme="@style/AppTheme.popUp"/>
     </application>
 
 </manifest>
